@@ -70,6 +70,15 @@ Install Docker Desktop separately: https://www.docker.com/products/docker-deskto
 | `search-api` | FastAPI       | Provides a `/search` endpoint for querying stored logs     |
 | `frontend`   | React or HTML | Simple dashboard to query/search logs and visualize output |
 
+```
 
+### Steps
+
+        - Step 1: Scaffold base folder and Dockerfiles for all Services
+        - Step 2: Build Docker images and push to ACR (Azure Container Registry) -> Run docker build and docker push
+        - Step 3: Create Kubernetes manifests -> Deploy services and MongoDb to AKS using kubectl or kustomize
+        - Step 4: Test log ingestion and searching -> use curl to send logs then query them from front end
+        - Step 5: Create Ingress using NGINX
+        - Step6: Create Log Generator
 
 

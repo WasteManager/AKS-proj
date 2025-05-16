@@ -3,7 +3,7 @@ Comprehensive Guide which documents steps to deploy a full functional log aggreg
 
 
 
-Prerequisites
+## Prerequisites
 
 ### Required Tools
 

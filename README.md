@@ -32,6 +32,10 @@ choco install nodejs -y
 Install Docker Desktop separately: https://www.docker.com/products/docker-desktop
 
 ```
+
+### Architecture
+
+```layout
 [ Client App / Curl ] 
         ↓
    ┌────────────┐

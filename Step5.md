@@ -16,6 +16,9 @@
 
   - Create ingress resource: You will create a yaml file in the manifests folder
 
-
+  - Apply the ingress yaml
+```
+kubectl apply -f ingress.yaml
+```
 
 

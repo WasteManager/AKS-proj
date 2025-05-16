@@ -1,0 +1,8 @@
+# File that ties everything together
+
+resources:
+  - log-ingest.yaml
+  - parser.yaml
+  - search-api.yaml
+  - frontend.yaml
+  - mongodb.yaml

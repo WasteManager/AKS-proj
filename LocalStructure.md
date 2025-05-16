@@ -1,4 +1,5 @@
 # This is the folder structure that you will create locally on your machine. I would advise creating the folder under Documents. But ultimately the choice is up to you. Just know where it is.
+```
 
 ### Directory Layout
 

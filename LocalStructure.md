@@ -20,8 +20,9 @@ log-aggregator/
 │   ├── frontend.yaml
 │   └── mongodb.yaml
 └── README.md
-
-
+```
+### Example commands
+```
 From Powershell, navigate to where you want it saved and you can use the following commands
 
 mkdir aks-log-aggregator

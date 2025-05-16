@@ -57,6 +57,9 @@ Install Docker Desktop separately: https://www.docker.com/products/docker-deskto
    ┌────────────┐
    │ Frontend   │ ◄──── React or plain HTML dashboard
    └────────────┘
+```
+
+### Services Breakdown
 
 ```Services Breakdown
 | Service      | Tech Stack    | Role                                                       |

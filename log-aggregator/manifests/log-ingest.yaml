@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log-ingest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-ingest
+  template:
+    metadata:
+      labels:
+        app: log-ingest
+    spec:
+      containers:
+      - name: log-ingest
+        image: logaggregatoracr.azurecr.us/log-ingest:v1
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: log-ingest
+spec:
+  selector:
+    app: log-ingest
+  ports:
+  - port: 8000
+    targetPort: 8000
+  type: ClusterIP

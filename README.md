@@ -3,8 +3,6 @@ Comprehensive Guide which documents steps to deploy a full functional log aggreg
 
  ---
 
- ###Architecture Overview
-
 [ Client App / Curl ] 
         ↓
    ┌────────────┐
@@ -26,6 +24,7 @@ Comprehensive Guide which documents steps to deploy a full functional log aggreg
    ┌────────────┐
    │ Frontend   │ ◄──── React or plain HTML dashboard
    └────────────┘
+
 
 
 

@@ -3,6 +3,32 @@ Comprehensive Guide which documents steps to deploy a full functional log aggreg
 
  ---
 
+ ###Architecture Overview
+
+[ Client App / Curl ] 
+        ↓
+   ┌────────────┐
+   │ Log Ingest │ ◄──── External HTTP
+   └────────────┘
+        ↓
+   ┌────────────┐
+   │ Parser     │ ◄──── Parses raw logs into JSON format
+   └────────────┘
+        ↓
+   ┌────────────┐
+   │ Storage    │ ◄──── MongoDB or PostgreSQL
+   └────────────┘
+        ↑
+   ┌────────────┐
+   │ Search API │ ◄──── REST interface to query logs
+   └────────────┘
+        ↑
+   ┌────────────┐
+   │ Frontend   │ ◄──── React or plain HTML dashboard
+   └────────────┘
+
+
+
 ## 📦 Prerequisites
 
 ### Required Tools
@@ -32,28 +58,4 @@ choco install nodejs -y
 
 Install Docker Desktop separately: https://www.docker.com/products/docker-desktop
 
-
-### Architecture Overview
-
-[ Client App / Curl ] 
-        ↓
-   ┌────────────┐
-   │ Log Ingest │ ◄──── External HTTP
-   └────────────┘
-        ↓
-   ┌────────────┐
-   │ Parser     │ ◄──── Parses raw logs into JSON format
-   └────────────┘
-        ↓
-   ┌────────────┐
-   │ Storage    │ ◄──── MongoDB or PostgreSQL
-   └────────────┘
-        ↑
-   ┌────────────┐
-   │ Search API │ ◄──── REST interface to query logs
-   └────────────┘
-        ↑
-   ┌────────────┐
-   │ Frontend   │ ◄──── React or plain HTML dashboard
-   └────────────┘
 

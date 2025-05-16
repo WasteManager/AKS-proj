@@ -78,7 +78,7 @@ Install Docker Desktop separately: https://www.docker.com/products/docker-deskto
         - Step 2: Build Docker images and push to ACR (Azure Container Registry) -> Run docker build and docker push
         - Step 3: Create Kubernetes manifests -> Deploy services and MongoDb to AKS using kubectl or kustomize
         - Step 4: Test log ingestion and searching -> use curl to send logs then query them from front end
-        - Step 5: Create Ingress using NGINX
+        - Step 5: Create Ingress Controller
         - Step6: Create Log Generator
 
 

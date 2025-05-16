@@ -1,6 +1,29 @@
 # AKS-proj
 Comprehensive Guide which documents steps to deploy a full functional log aggregator platform on Azure Kubernetes Service. Includes setup commands, YAML Files, docker configs and troubleshooting
 
+### Architecture
+
+[ Client App / Curl ] 
+        ↓
+   ┌────────────┐
+   │ Log Ingest │ ◄──── External HTTP
+   └────────────┘
+        ↓
+   ┌────────────┐
+   │ Parser     │ ◄──── Parses raw logs into JSON format
+   └────────────┘
+        ↓
+   ┌────────────┐
+   │ Storage    │ ◄──── MongoDB or PostgreSQL
+   └────────────┘
+        ↑
+   ┌────────────┐
+   │ Search API │ ◄──── REST interface to query logs
+   └────────────┘
+        ↑
+   ┌────────────┐
+   │ Frontend   │ ◄──── React or plain HTML dashboard
+   └────────────┘
 
 
 ## Prerequisites
